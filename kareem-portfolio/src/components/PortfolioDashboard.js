@@ -1,6 +1,6 @@
 import React from 'react';
 import {Col, Row} from "react-bootstrap";
-
+// import profileImage from '/images/kareem-pic-hokkaido.jpg'
 const SummaryBlock = (name, content) =>
     <span>
         <strong> {name}: </strong> <span>{content}</span>
@@ -8,20 +8,22 @@ const SummaryBlock = (name, content) =>
 
 function PortfolioDashboard() {
     return (
-        <div className="portfolio-dashboard">
-            <Row>
-                <img/>
-            </Row>
+        <div className="portfolio-dashboard"
+        >
             <Row>
                 <Col>
-                    My name is Kareem.
-                    A Full Stack Developer.
-                    Skilled, Adventurous.
+                    <div style={{textAlign:'left'}}>
+                        My name is Kareem.<br/>
+                        A Full Stack Developer.<br/>
+                        Skilled, Adventurous.
+                    </div>
                 </Col>
                 <Col>
-                    <button>My Projects</button>
-                    <button>My Skills</button>
-                    <button>My Adventures</button>
+                    <div className={'btn-container'}>
+                        <button>My Projects</button>
+                        <button>My Skills</button>
+                        <button>My Adventures</button>
+                    </div>
                 </Col>
             </Row>
         </div>

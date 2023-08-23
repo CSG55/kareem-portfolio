@@ -1,5 +1,8 @@
+@import 'variables';
+
 .App {
   text-align: center;
+  overflow-x: hidden;
 }
 
 .App-logo {
@@ -35,4 +38,22 @@
   to {
     transform: rotate(360deg);
   }
+}
+.portfolio-dashboard {
+  height: 93%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('../../public/images/kareem-pic-hokkaido.jpg');
+  background-position: center;
+  background-color: $background-theme;
+
+}
+
+.navbar{
+  height:7%
+}
+
+.btn-container{
+  display: flex;
+  flex-flow: column;
 }
