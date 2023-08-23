@@ -47,6 +47,13 @@
   background-position: center;
   background-color: $background-theme;
 
+  & .dashboard-footer-row {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
 }
 
 .navbar{

@@ -1,6 +1,7 @@
 import React from 'react';
 import {Col, Row} from "react-bootstrap";
-// import profileImage from '/images/kareem-pic-hokkaido.jpg'
+import Typewriter from 'typewriter-effect';
+
 const SummaryBlock = (name, content) =>
     <span>
         <strong> {name}: </strong> <span>{content}</span>
@@ -10,15 +11,31 @@ function PortfolioDashboard() {
     return (
         <div className="portfolio-dashboard"
         >
-            <Row>
-                <Col>
-                    <div style={{textAlign:'left'}}>
-                        My name is Kareem.<br/>
-                        A Full Stack Developer.<br/>
-                        Skilled, Adventurous.
-                    </div>
+            <Row className={'dashboard-footer-row'}>
+                <Col className={'d-flex justify-content-center'}>
+                    {/*<div style={{textAlign:'left'}}>*/}
+                    {/*    My name is Kareem.<br/>*/}
+                    {/*    A Full Stack Developer.<br/>*/}
+                    {/*    Skilled, Adventurous.*/}
+                    {/*</div>*/}
+                    <Typewriter
+                        options={{
+                            autoStart: true,
+                            loop: false,
+                            delay: 40,
+                            pauseFor: 0,
+                            stop:false,
+                        }}
+                        onInit={(typewriter) => {
+                            typewriter
+                                .typeString(`My name is Kareem.`)
+                                .typeString(`<br/>A Full Stack Developer.`)
+                                .typeString(`<br/>Skilled, Adventurous.`)
+                                .start()
+                        }}
+                    />
                 </Col>
-                <Col>
+                <Col className={'d-flex justify-content-center'}>
                     <div className={'btn-container'}>
                         <button>My Projects</button>
                         <button>My Skills</button>
