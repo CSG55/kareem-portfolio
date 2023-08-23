@@ -1,6 +1,4 @@
-import logo from '../logo.svg';
-import '../styles/App.scss';
-import '../styles/vendor.scss';
+import '../styles/index.scss';
 import NavBar from "./NavBar";
 import PortfolioDashboard from "./PortfolioDashboard";
 

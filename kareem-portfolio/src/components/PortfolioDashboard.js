@@ -37,9 +37,9 @@ function PortfolioDashboard() {
                 </Col>
                 <Col className={'d-flex justify-content-center'}>
                     <div className={'btn-container'}>
-                        <button>My Projects</button>
-                        <button>My Skills</button>
-                        <button>My Adventures</button>
+                        <button className='btn btn-primary'>My Projects</button>
+                        <button className='btn btn-primary'>My Skills</button>
+                        <button className='btn btn-primary'>My Adventures</button>
                     </div>
                 </Col>
             </Row>

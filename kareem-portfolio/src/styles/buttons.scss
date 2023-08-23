@@ -1,0 +1,17 @@
+@import 'variables';
+
+.btn{
+  margin: 0.2em;
+
+  &.btn-primary {
+    background-color: $primary-green;
+    border: $primary-green;
+  }
+  &:hover {
+    background-color: $light-green;
+  }
+  &:focus,
+  &:active {
+    background-color: $green-gray!important;
+  }
+}
