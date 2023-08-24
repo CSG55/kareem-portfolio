@@ -57,7 +57,14 @@
 }
 
 .navbar{
-  height:7%
+  height:7%;
+  background-color: $background-theme!important;
+  //& a {
+  //  color: black!important;
+  //  &:active, :hover, :focus{
+  //    font-weight: bold!important;
+  //  }
+  //}
 }
 
 .btn-container{

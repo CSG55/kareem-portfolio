@@ -29,8 +29,12 @@ function PortfolioDashboard() {
                         onInit={(typewriter) => {
                             typewriter
                                 .typeString(`My name is Kareem.`)
+                                .pauseFor(250)
                                 .typeString(`<br/>A Full Stack Developer.`)
-                                .typeString(`<br/>Skilled, Adventurous.`)
+                                .pauseFor(250)
+                                .typeString(`<br/>Skilled, `)
+                                .pauseFor(500)
+                                .typeString(`Adventurous.`)
                                 .start()
                         }}
                     />
