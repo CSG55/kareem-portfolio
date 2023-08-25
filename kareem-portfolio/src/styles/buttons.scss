@@ -2,9 +2,9 @@
 
 .btn{
   margin: 0.2em;
-
+  font-family: 'Roboto Condensed', sans-serif;
   &.btn-primary {
-    background-color: $primary-green;
+    background-color: $caramel;
     border: $primary-green;
   }
   &:hover {
@@ -13,5 +13,20 @@
   &:focus,
   &:active {
     background-color: $green-gray!important;
+  }
+}
+
+#profileBtnFadeIn {
+  opacity: 0;
+  animation: fadein 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 2.2s;
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

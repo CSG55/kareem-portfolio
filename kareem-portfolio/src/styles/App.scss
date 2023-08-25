@@ -17,14 +17,14 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  //background-color: white;
+  //min-height: 100vh;
+  //display: flex;
+  //flex-direction: column;
+  //align-items: center;
+  //justify-content: center;
+  //font-size: calc(10px + 2vmin);
+  //color: white;
 }
 
 .App-link {
@@ -39,35 +39,41 @@
     transform: rotate(360deg);
   }
 }
+
 .portfolio-dashboard {
   height: 93%;
   background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url('../../public/images/kareem-pic-hokkaido.jpg');
+  background-size: cover;
+  background-image: url('../../public/images/kareem_portfolio_main.jpeg');
   background-position: center;
   background-color: $background-theme;
 
   & .dashboard-footer-row {
-    position: absolute;
     width: 100%;
+    position: absolute;
     bottom: 45px;
     left: 0;
     right: 0;
+  }
+  @media (max-width: 992px) {
+    & .dashboard-footer-row {
+      --bs-gutter-x: 0;
+    }
+  }
+
+  @media (min-width: 992px) {
+    & .dashboard-footer-row {
+      bottom: 180px;
+    }
   }
 }
 
 .navbar{
   height:7%;
-  background-color: $background-theme!important;
-  //& a {
-  //  color: black!important;
-  //  &:active, :hover, :focus{
-  //    font-weight: bold!important;
-  //  }
-  //}
 }
 
 .btn-container{
   display: flex;
   flex-flow: column;
 }
+
