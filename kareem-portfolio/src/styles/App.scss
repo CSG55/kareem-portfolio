@@ -79,8 +79,15 @@
 
 .interactive-panel {
   height: 300px;
-  width: 300px;
   transition: transform 0.3s, box-shadow 0.3s;
+  margin: 10px;
+  width: 47%;
+  justify-content: center;
+
+  & img {
+    position: absolute;
+
+  }
 }
 
 .interactive-panel:hover {
@@ -100,5 +107,5 @@
   display: flex;
   flex-flow: wrap;
   flex-direction: row;
-  margin: 100px;
+  margin: 0 100px 100px 100px;
 }
