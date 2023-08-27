@@ -1,9 +1,9 @@
 import React from "react";
 
 const SummaryBlock = ({name, content}) =>
-    <span>
+    <React.Fragment>
         <strong> {name}: </strong> <span>{content}</span>
-    </span>
+    </React.Fragment>
 
 export {
     SummaryBlock,

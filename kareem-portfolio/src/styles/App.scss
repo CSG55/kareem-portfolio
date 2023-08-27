@@ -41,7 +41,8 @@
 }
 
 .portfolio-dashboard {
-  height: 93%;
+  overflow: hidden;
+  height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url('../../public/images/kareem_portfolio_main.jpeg');
@@ -69,7 +70,13 @@
 }
 
 .navbar{
-  height:7%;
+  height: 8%;
+  @media (max-width: 992px) {
+    overflow: hidden;
+    height: unset;
+    min-height:8%;
+  }
+
 }
 
 .btn-container{
@@ -99,13 +106,20 @@
 
     & img {
       position: absolute;
-
     }
+    & .card-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;    }
   }
 
   & .interactive-panel:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    & img {
+      display: none;
+    }
   }
 
   & .hidden-text {
@@ -120,13 +134,12 @@
 }
 
 .app-container {
-  min-height: 93%;
-  //padding-bottom: 1px;
+  height: 92%;
 }
 
 .project-dashboard {
   background-color: $primary-green;
-  min-height: 93%;
+  min-height: 92%;
   position: absolute;
 }
 .quote-header {
@@ -159,3 +172,4 @@ blockquote {
     font-size: 1.2em;
   }
 }
+
