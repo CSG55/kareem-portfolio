@@ -109,3 +109,24 @@
   flex-direction: row;
   margin: 0 100px 100px 100px;
 }
+
+.project-dashboard {
+  background-color: $primary-green;
+  height: 100%;
+}
+.quote-header {
+  background-color: black;
+  color: white;
+  height: fit-content;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+
+  & h3 {
+    margin: 0 10% 0 10%;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Noto Sans', sans-serif;
+}

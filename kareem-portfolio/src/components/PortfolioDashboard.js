@@ -1,9 +1,11 @@
 import React from 'react';
 import {Col, Row} from "react-bootstrap";
 import Typewriter from 'typewriter-effect';
+import {useNavigate} from "react-router";
 
 
 function PortfolioDashboard() {
+    const navigate = useNavigate();
 
     return (
         <div className="portfolio-dashboard"
@@ -28,7 +30,7 @@ function PortfolioDashboard() {
                                     .start()
                             }}
                         />
-                        <button id="profileBtnFadeIn" className='btn btn-primary'>My Projects</button>
+                        <button id="profileBtnFadeIn" className='btn btn-primary' onClick={() => navigate("/projects")}>My Projects</button>
                     </div>
                 </Col>
             </Row>

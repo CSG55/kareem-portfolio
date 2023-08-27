@@ -11,7 +11,10 @@ const ProjectDashboard = () => {
 
     return (
         <div className="project-dashboard">
-            <h1>Projects</h1>
+            <div className="quote-header">
+                <h3>Whenever someone creates something with all of their heart, then that creation is given a soul.</h3>
+                <h6> - Reiko Yoshida, The Cat Returns </h6>
+            </div>
             <div className="panel-container">
                 {panelData.map((panel) => (
                     <InteractivePanel
