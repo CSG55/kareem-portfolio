@@ -77,42 +77,57 @@
   flex-flow: column;
 }
 
-.interactive-panel {
-  height: 300px;
-  transition: transform 0.3s, box-shadow 0.3s;
-  margin: 10px;
-  width: 47%;
-  justify-content: center;
-
-  & img {
-    position: absolute;
-
-  }
-}
-
-.interactive-panel:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.hidden-text {
-  display: none;
-}
-
-.interactive-panel:hover .hidden-text {
-  display: block;
-}
 
 .panel-container{
   display: flex;
+  justify-content: center;
   flex-flow: wrap;
   flex-direction: row;
-  margin: 0 100px 100px 100px;
+  margin: 0 10% 10% 10%;
+  height: fit-content;
+
+  @media (max-width: 768px) {
+    margin: 0 1% 1% 1%;
+  }
+
+  .interactive-panel {
+    height: 200px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 10px;
+    width: 200px;
+    justify-content: center;
+
+    & img {
+      position: absolute;
+
+    }
+  }
+
+  & .interactive-panel:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  & .hidden-text {
+    display: none;
+  }
+
+  & .interactive-panel:hover .hidden-text {
+    display: block;
+  }
+
+
+}
+
+.app-container {
+  min-height: 93%;
+  //padding-bottom: 1px;
 }
 
 .project-dashboard {
   background-color: $primary-green;
-  height: 100%;
+  min-height: 93%;
+  position: absolute;
 }
 .quote-header {
   background-color: black;
@@ -121,6 +136,7 @@
   padding: 10px 10% 20px 10%;
   display: flex;
   align-items: center;
+  margin-bottom: 10px;
 
   & svg {
     width: 10vw;
@@ -139,4 +155,7 @@ blockquote {
   font-size: 1.6em;
   line-height: 1.5em;
   padding: 0 10px 0 10px;
+  @media (max-width: 768px) {
+    font-size: 1.2em;
+  }
 }
