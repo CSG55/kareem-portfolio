@@ -1,13 +1,16 @@
 import '../styles/index.scss';
 import NavBar from "./NavBar";
-import PortfolioDashboard from "./PortfolioDashboard";
+import {BrowserRouter} from "react-router-dom";
+import {AppRoutes} from "./AppRoutes";
 
 function App() {
   return (
-    <div className="App" style={{height: '100%'}}>
-        <NavBar/>
-        <PortfolioDashboard/>
-    </div>
+      <BrowserRouter>
+          <div className="App" style={{height: '100%'}}>
+              <NavBar/>
+              <AppRoutes/>
+          </div>
+      </BrowserRouter>
   );
 }
 
