@@ -1,5 +1,7 @@
 import React from 'react';
 import InteractivePanel from './InteractivePanel';
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faCoffee, faQuoteLeft, faQuoteRight} from "@fortawesome/free-solid-svg-icons";
 
 const ProjectDashboard = () => {
     const panelData = [
@@ -12,8 +14,14 @@ const ProjectDashboard = () => {
     return (
         <div className="project-dashboard">
             <div className="quote-header">
-                <h3>Whenever someone creates something with all of their heart, then that creation is given a soul.</h3>
-                <h6> - Reiko Yoshida, The Cat Returns </h6>
+                <FontAwesomeIcon icon={faQuoteLeft} size={'10x'} />
+                <div>
+                    <blockquote>
+                        Whenever someone creates something with all of their heart, then that creation is given a soul.
+                    </blockquote>
+                    <cite> Reiko Yoshida, The Cat Returns </cite>
+                </div>
+                <FontAwesomeIcon icon={faQuoteRight} size={"10x"} />
             </div>
             <div className="panel-container">
                 {panelData.map((panel) => (
