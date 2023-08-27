@@ -1,10 +1,6 @@
 import React from 'react';
 import {Row} from "react-bootstrap";
-
-const SummaryBlock = (name, content) =>
-    <span>
-        <strong> {name}: </strong> <span>{content}</span>
-    </span>
+import {SummaryBlock} from "./common";
 
 function ProjectView(title, mission, role, stack, date, description, image) {
     return (

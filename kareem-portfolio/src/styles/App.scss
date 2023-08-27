@@ -77,3 +77,19 @@
   flex-flow: column;
 }
 
+.interactive-panel {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.interactive-panel:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hidden-text {
+  display: none;
+}
+
+.interactive-panel:hover .hidden-text {
+  display: block;
+}
