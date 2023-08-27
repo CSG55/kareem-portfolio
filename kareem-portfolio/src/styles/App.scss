@@ -78,6 +78,8 @@
 }
 
 .interactive-panel {
+  height: 300px;
+  width: 300px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -92,4 +94,11 @@
 
 .interactive-panel:hover .hidden-text {
   display: block;
+}
+
+.panel-container{
+  display: flex;
+  flex-flow: wrap;
+  flex-direction: row;
+  margin: 100px;
 }
