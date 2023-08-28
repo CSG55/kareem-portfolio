@@ -2,14 +2,9 @@ import React from 'react';
 import InteractivePanel from './InteractivePanel';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCoffee, faQuoteLeft, faQuoteRight} from "@fortawesome/free-solid-svg-icons";
+import {projectData} from "./common";
 
 const ProjectDashboard = () => {
-    const panelData = [
-        {id:'sidekick', title:'Sidekick Training', image: '/images/projects/sidekick/logo-sidekick.svg', mission:'', role: 'Full Stack Developer', stack: '', date:''},
-        {id:'ethics-bowl', title:'Ethics Bowl', image: '/images/projects/ethics-bowl/NHSEBOne_Seal.png', mission:'', role: 'Full Stack Developer', stack:'', date:''},
-        {id:'synergy', title:'Synergy LMS', image: '/images/projects/synergy/synergy-logo.png', mission:'', role: 'Full Stack Developer', stack:'', date:'', backgroundColor: '#414653'},
-        {id:'map-calc', title:'McMaster Academic Planner', image: '/images/projects/map-calc/mcmaster-logo.png', mission:'', role: 'Full Stack Developer', stack:'', date:'', backgroundColor: '#7A003C'},
-    ];
 
     return (
         <div className="project-dashboard">
@@ -24,7 +19,7 @@ const ProjectDashboard = () => {
                 <FontAwesomeIcon icon={faQuoteRight} />
             </div>
             <div className="panel-container">
-                {panelData.map((panel) => (
+                {projectData.map((panel) => (
                     <InteractivePanel
                         key={panel.id}
                         title={panel.title}

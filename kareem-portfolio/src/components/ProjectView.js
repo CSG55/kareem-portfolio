@@ -2,7 +2,7 @@ import React from 'react';
 import {Row} from "react-bootstrap";
 import {SummaryBlock} from "./common";
 
-function ProjectView(title, mission, role, stack, date, description, image) {
+function ProjectView({title, mission, role, stack, date, description, image}) {
     return (
         <div className="project-view">
             <Row className="top-img">
