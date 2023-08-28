@@ -150,6 +150,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+  justify-content: center;
 
   & svg {
     width: 5vw;
@@ -173,3 +174,8 @@ blockquote {
   }
 }
 
+.ghibli-soot-sprite{
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+}

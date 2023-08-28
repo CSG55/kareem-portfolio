@@ -19,7 +19,7 @@ const ProjectDashboard = () => {
                     <blockquote>
                         Whenever someone creates something with all of their heart, then that creation is given a soul.
                     </blockquote>
-                    <cite> Reiko Yoshida, The Cat Returns </cite>
+                    <cite> <img className="ghibli-soot-sprite" src={"/images/soot-sprite-ghibli.jpg"} alt={'ghibli soot sprite as bullet point'}></img>Reiko Yoshida, The Cat Returns </cite>
                 </div>
                 <FontAwesomeIcon icon={faQuoteRight} />
             </div>
