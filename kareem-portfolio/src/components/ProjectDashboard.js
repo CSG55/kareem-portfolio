@@ -7,21 +7,21 @@ const ProjectDashboard = () => {
     const panelData = [
         {id:'sidekick', title:'Sidekick Training', image: '/images/projects/sidekick/logo-sidekick.svg', mission:'', role: 'Full Stack Developer', stack: '', date:''},
         {id:'ethics-bowl', title:'Ethics Bowl', image: '/images/projects/ethics-bowl/NHSEBOne_Seal.png', mission:'', role: 'Full Stack Developer', stack:'', date:''},
-        {id:'synergy', title:'Synergy LMS', image: '/images/projects/synergy/synergy-logo.png', mission:'', role: 'Full Stack Developer', stack:'', date:''},
-        {id:'map-calc', title:'McMaster Academic Planner', image: '/images/projects/map-calc/mcmaster-logo.svg', mission:'', role: 'Full Stack Developer', stack:'', date:''},
+        {id:'synergy', title:'Synergy LMS', image: '/images/projects/synergy/synergy-logo.png', mission:'', role: 'Full Stack Developer', stack:'', date:'', backgroundColor: '#414653'},
+        {id:'map-calc', title:'McMaster Academic Planner', image: '/images/projects/map-calc/mcmaster-logo.png', mission:'', role: 'Full Stack Developer', stack:'', date:'', backgroundColor: '#7A003C'},
     ];
 
     return (
         <div className="project-dashboard">
             <div className="quote-header">
-                <FontAwesomeIcon icon={faQuoteLeft} size={'10x'} />
+                <FontAwesomeIcon icon={faQuoteLeft} />
                 <div>
                     <blockquote>
                         Whenever someone creates something with all of their heart, then that creation is given a soul.
                     </blockquote>
                     <cite> Reiko Yoshida, The Cat Returns </cite>
                 </div>
-                <FontAwesomeIcon icon={faQuoteRight} size={"10x"} />
+                <FontAwesomeIcon icon={faQuoteRight} />
             </div>
             <div className="panel-container">
                 {panelData.map((panel) => (
@@ -29,6 +29,7 @@ const ProjectDashboard = () => {
                         key={panel.id}
                         title={panel.title}
                         image={panel.image}
+                        imgBackground={panel.backgroundColor}
                         role={panel.role}
                         stack={panel.stack}
                     />
