@@ -1,0 +1,30 @@
+@import 'variables';
+
+.project-dashboard {
+  background-color: $secondary-olive;
+  min-height: 92%;
+  position: absolute;
+  width: 100%;
+}
+
+.project-view-wrapper {
+  background-color: $secondary-olive;
+  height: 100%;
+  color: white;
+  padding: 30px 10px 10px 10px;
+}
+
+.project-summary {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  justify-content: center;
+  & .summary-block {
+    width: fit-content;
+    margin-right: auto;
+  }
+}
+
+.project-description {
+  text-align: left;
+}

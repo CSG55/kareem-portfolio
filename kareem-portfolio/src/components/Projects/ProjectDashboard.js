@@ -2,7 +2,7 @@ import React from 'react';
 import InteractivePanel from '../common/InteractivePanel';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCoffee, faQuoteLeft, faQuoteRight} from "@fortawesome/free-solid-svg-icons";
-import {projectData} from "../common";
+import {projectData} from "../../projectData";
 
 const ProjectDashboard = () => {
 

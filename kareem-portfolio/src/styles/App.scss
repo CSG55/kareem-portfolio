@@ -132,21 +132,12 @@
   & .interactive-panel:hover .hidden-text {
     display: block;
   }
-
-
 }
-
 .app-container {
   height: 92%;
   width: 100%;
 }
 
-.project-dashboard {
-  background-color: $secondary-olive;
-  min-height: 92%;
-  position: absolute;
-  width: 100%;
-}
 .quote-header {
   background-color: black;
   color: white;
@@ -185,24 +176,4 @@ blockquote {
   margin-right: 5px;
 }
 
-.project-summary {
-  display: flex;
-  flex-direction: column;
-  width: fit-content;
-  justify-content: center;
-  & .summary-block {
-    width: fit-content;
-    margin-right: auto;
-  }
-}
 
-.project-description {
-  text-align: left;
-}
-
-.project-view-wrapper {
-  background-color: $secondary-olive;
-  height: 100%;
-  color: white;
-  padding: 30px 10px 10px 10px;
-}
