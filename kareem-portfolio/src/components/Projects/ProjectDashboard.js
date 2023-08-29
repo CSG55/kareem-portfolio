@@ -24,7 +24,7 @@ const ProjectDashboard = () => {
                         key={panel.id}
                         id={panel.id}
                         title={panel.title}
-                        image={panel.image}
+                        image={panel.logo}
                         imgBackground={panel.backgroundColor}
                         role={panel.role}
                         stack={panel.stack}

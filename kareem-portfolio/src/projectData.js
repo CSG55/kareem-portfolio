@@ -4,7 +4,8 @@ const projectData = [
     {
         id:'sidekick',
         title:'Sidekick Training',
-        image: '/images/projects/sidekick/logo-sidekick.svg',
+        logo: '/images/projects/sidekick/logo-sidekick.svg',
+        image: '/images/projects/ethics-bowl/live-match.webp',
         mission:'To create an inclusive learning environment.',
         role: 'Full Stack Developer',
         stack: 'ReactJS, Python (Flask), NodeJS, PostgreSQL, AWS.',
@@ -19,7 +20,8 @@ const projectData = [
     {
         id:'map-calc',
         title:'McMaster Academic Planner',
-        image: '/images/projects/map-calc/mcmaster-logo.png',
+        logo: '/images/projects/map-calc/mcmaster-logo.png',
+        image: '/images/projects/map-calc/map-screenshot.png',
         mission: 'Guide students to programs they’ll love.',
         role: 'Full Stack Developer',
         stack:'ReactJS, Python (Django), PostgresDB, AWS.',
@@ -34,7 +36,8 @@ const projectData = [
     {
         id:'ethics-bowl',
         title:'Ethics Bowl',
-        image: '/images/projects/ethics-bowl/NHSEBOne_Seal.png',
+        logo: '/images/projects/ethics-bowl/NHSEBOne_Seal.png',
+        image: '/images/projects/ethics-bowl/live-match.webp',
         mission:'Rescue a national extracurricular event in the pandemic.',
         role: 'Full Stack Developer',
         stack:'ReactJS, Python (Flask), PostgreSQL, AWS.',
@@ -49,7 +52,8 @@ const projectData = [
     {
         id:'synergy',
         title:'Synergy LMS',
-        image: '/images/projects/synergy/synergy-logo.png',
+        logo: '/images/projects/synergy/synergy-logo.png',
+        image: '',
         mission:'Give students the experience I wish I had.',
         role: 'Full Stack Developer',
         stack:'ReactJS, Python (Flask), MySQL, AWS.',
