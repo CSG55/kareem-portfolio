@@ -3,12 +3,15 @@ import {Row} from "react-bootstrap";
 import {SummaryBlock} from "./common";
 
 function ProjectView({title, mission, role, stack, date, description, image}) {
+    console.log(description)
+    console.log(typeof (description))
+
     return (
         <div className="project-view">
             {/*<Row className="top-img">*/}
             {/*    <img src={image}></img>*/}
             {/*</Row>*/}
-            <Row className="project-summary">
+            <div className="project-summary">
                 {title &&
                     <SummaryBlock name={'Project'} content={title}/>
                 }
@@ -24,10 +27,15 @@ function ProjectView({title, mission, role, stack, date, description, image}) {
                 {date &&
                     <SummaryBlock name={'Date'} content={date}/>
                 }
-            </Row>
-            <Row className="project-description">
-                {description && description}
-            </Row>
+            </div>
+            {description &&
+                <div className="project-description">
+                    {description}
+                </div>
+            }
+            <div
+            />
+
 
         </div>
     );

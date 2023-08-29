@@ -179,3 +179,18 @@ blockquote {
   width: 20px;
   margin-right: 5px;
 }
+
+.project-summary {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  justify-content: center;
+  & .summary-block {
+    width: fit-content;
+    margin-right: auto;
+  }
+}
+
+.project-description {
+  text-align: left;
+}
