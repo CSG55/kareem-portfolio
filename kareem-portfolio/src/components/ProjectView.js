@@ -5,9 +5,9 @@ import {SummaryBlock} from "./common";
 function ProjectView({title, mission, role, stack, date, description, image}) {
     return (
         <div className="project-view">
-            <Row className="top-img">
-                <img src={image}></img>
-            </Row>
+            {/*<Row className="top-img">*/}
+            {/*    <img src={image}></img>*/}
+            {/*</Row>*/}
             <Row className="project-summary">
                 {title &&
                     <SummaryBlock name={'Project'} content={title}/>
