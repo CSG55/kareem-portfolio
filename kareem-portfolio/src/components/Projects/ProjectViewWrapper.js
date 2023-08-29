@@ -1,15 +1,13 @@
 import React, {useState} from 'react';
 import {Row} from "react-bootstrap";
-import {SummaryBlock, projectData} from "./common";
+import {SummaryBlock} from "../common";
+import {projectData} from "../../projectData";
 import {useParams} from "react-router";
 import ProjectView from "./ProjectView";
 
-function ProjectViewWrapper({title, mission, role, stack, date, description, image}) {
+function ProjectViewWrapper() {
     let urlParams = useParams();
     const [data, setProjectData] = useState(projectData.find(p => p['id'] === urlParams['projectId']));
-
-    console.log(data)
-
 
     return (
         <div className="project-view-wrapper">

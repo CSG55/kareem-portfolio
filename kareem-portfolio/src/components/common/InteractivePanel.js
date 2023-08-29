@@ -1,6 +1,6 @@
 import React from 'react';
 import {Card} from "react-bootstrap";
-import {SummaryBlock} from "./common";
+import {SummaryBlock} from "../common";
 import {useNavigate} from "react-router";
 import {Link} from "react-router-dom";
 

@@ -1,8 +1,8 @@
 import React from 'react';
 import {Route, Routes} from "react-router";
 import PortfolioDashboard from "./PortfolioDashboard";
-import ProjectDashboard from "./ProjectDashboard";
-import ProjectViewWrapper from "./ProjectViewWrapper";
+import ProjectDashboard from "./Projects/ProjectDashboard";
+import ProjectViewWrapper from "./Projects/ProjectViewWrapper";
 
 export function AppRoutes() {
     return (
