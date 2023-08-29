@@ -22,6 +22,7 @@ const ProjectDashboard = () => {
                 {projectData.map((panel) => (
                     <InteractivePanel
                         key={panel.id}
+                        id={panel.id}
                         title={panel.title}
                         image={panel.image}
                         imgBackground={panel.backgroundColor}

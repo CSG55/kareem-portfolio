@@ -5,7 +5,6 @@ import {NavDropdown} from "react-bootstrap";
 import {Link, useNavigate} from "react-router-dom";
 
 function NavBar() {
-    const navigate = useNavigate();
 
     return (
         <>
