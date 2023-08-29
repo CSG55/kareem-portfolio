@@ -9,9 +9,10 @@
 
 .project-view-wrapper {
   background-color: $secondary-olive;
-  height: 100%;
+  min-height: 92%;
   color: white;
   padding: 30px 10px 10px 10px;
+  position: absolute;
 
   & img {
     max-width: 100%;
