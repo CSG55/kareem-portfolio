@@ -60,6 +60,7 @@
 
 .navbar{
   height: 8%;
+  font-family: 'Noto Sans', sans-serif;
   @media (max-width: 992px) {
     overflow: hidden;
     height: unset;
@@ -87,7 +88,7 @@
   }
 
   .interactive-panel {
-    height: 200px;
+    height: 230px;
     transition: transform 0.3s, box-shadow 0.3s;
     margin: 10px;
     width: 300px;
@@ -96,10 +97,13 @@
     border: 1px solid $tertiary-beige;
     border-radius: 15px;
     cursor: pointer;
+    @media (max-width: 768px) {
+      height: 175px;
+    }
 
     & img {
       position: absolute;
-      padding: 0 10px 0 10px
+      padding: 0 15px 0 15px
     }
     & .card-body {
       display: flex;
@@ -137,7 +141,7 @@
 }
 
 .project-dashboard {
-  background-color: $primary-green;
+  background-color: $secondary-olive;
   min-height: 92%;
   position: absolute;
   width: 100%;
@@ -193,4 +197,11 @@ blockquote {
 
 .project-description {
   text-align: left;
+}
+
+.project-view-wrapper {
+  background-color: $secondary-olive;
+  height: 100%;
+  color: white;
+  padding: 30px 10px 10px 10px;
 }
