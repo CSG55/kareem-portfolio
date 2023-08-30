@@ -52,7 +52,7 @@ const projectData = [
     {
         id:'synergy',
         title:'Synergy LMS',
-        logo: '/images/projects/synergy/synergy-logo.png',
+        logo: '/images/projects/synergy/synergy-logo.svg',
         image: '',
         mission:'Give students the experience I wish I had.',
         role: 'Full Stack Developer',
