@@ -9,10 +9,10 @@ function ProjectView({title, mission, role, stack, date, description, image}) {
     return (
         <div className="project-view">
             <Row>
-                <Col sm={12} lg={6}>
-                    <img src={image}></img>
+                <Col className={'project-img'} sm={12} md={7} lg={7}>
+                    <img src={image} alt={`${title} project photo`}></img>
                 </Col>
-                <Col sm={12} lg={6}>
+                <Col sm={12} lg={5}>
                     <div className="project-summary">
                         {title &&
                             <SummaryBlock name={'Project'} content={title}/>

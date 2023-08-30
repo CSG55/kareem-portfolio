@@ -5,7 +5,7 @@ const projectData = [
         id:'sidekick',
         title:'Sidekick Training',
         logo: '/images/projects/sidekick/logo-sidekick.svg',
-        image: '/images/projects/ethics-bowl/live-match.webp',
+        image: '/images/projects/sidekick/SK-promo.png',
         mission:'To create an inclusive learning environment.',
         role: 'Full Stack Developer',
         stack: 'ReactJS, Python (Flask), NodeJS, PostgreSQL, AWS.',
