@@ -18,7 +18,9 @@ function ProjectViewWrapper() {
                 stack={data['stack']}
                 title={data['title']}
                 mission={data['mission']}
-                image={data['image'] ? data['image'] : data['logo']}
+                image={data['image']}
+                logo={data['logo']}
+                backgroundColor={data['backgroundColor']}
             />
         </div>
     );

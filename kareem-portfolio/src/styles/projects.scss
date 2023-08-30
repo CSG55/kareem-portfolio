@@ -16,7 +16,7 @@
 
   & .project-img {
     display: flex;
-    margin: auto;
+    //margin: auto;
     justify-content: center;
     padding-bottom: 3%;
     & img {
@@ -24,6 +24,12 @@
       max-height: 100%;
       vertical-align: middle;
       border: 3px solid black;
+    }
+    & .project-logo {
+      zoom: 1.5;
+      width: fit-content;
+      height: fit-content;
+      border-radius: 15px;
     }
   }
 }
@@ -50,4 +56,8 @@
   background-color: $tertiary-beige;
   border-radius: 15px;
   width: 100%;
+
+  & ul {
+    margin-bottom: 0;
+  }
 }

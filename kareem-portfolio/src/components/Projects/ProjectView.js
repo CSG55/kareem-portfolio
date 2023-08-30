@@ -4,7 +4,7 @@ import {SummaryBlock} from "../common";
 import ImageGallery from "react-image-gallery";
 
 
-function ProjectView({title, mission, role, stack, date, description, image}) {
+function ProjectView({title, mission, role, stack, date, description, image, logo, backgroundColor}) {
     const imageGalleryRef = useRef(null);
 
     const onImageClickHandler = () => {
@@ -21,6 +21,7 @@ function ProjectView({title, mission, role, stack, date, description, image}) {
         {
             original: image,
             originalAlt:`${title} project photo`,
+            fullscreen:false,
         },
     ];
 
@@ -28,13 +29,16 @@ function ProjectView({title, mission, role, stack, date, description, image}) {
         <div className="project-view">
             <Row>
                 <Col className={'project-img'} sm={12} md={12} lg={8}>
-                    <ImageGallery
-                        items={images}
-                        showPlayButton={false}
-                        useBrowserFullscreen={false}
-                        ref={imageGalleryRef}
-                        onClick={onImageClickHandler}
-                    />
+                    {/*for projects without an image, show logo instead*/}
+                    {image ? <ImageGallery
+                                items={images}
+                                showPlayButton={false}
+                                useBrowserFullscreen={false}
+                                ref={imageGalleryRef}
+                                onClick={onImageClickHandler}
+                            /> :
+                        <img className={'project-logo'} style={{backgroundColor: backgroundColor}} src={logo} alt={`${title} project photo`}></img>
+                    }
                 </Col>
                 <Col sm={12} md={12} lg={4}>
                     <div className="project-summary">
