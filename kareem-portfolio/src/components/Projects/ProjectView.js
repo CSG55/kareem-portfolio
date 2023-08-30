@@ -2,9 +2,13 @@ import React, {useRef} from 'react';
 import {Col, Row} from "react-bootstrap";
 import {SummaryBlock} from "../common";
 import ImageGallery from "react-image-gallery";
+import { useNavigate} from "react-router-dom";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faArrowLeft, faQuoteLeft} from "@fortawesome/free-solid-svg-icons";
 
 
 function ProjectView({title, mission, role, stack, date, description, image, logo, backgroundColor}) {
+    let navigate = useNavigate();
     const imageGalleryRef = useRef(null);
 
     const onImageClickHandler = () => {
@@ -27,6 +31,10 @@ function ProjectView({title, mission, role, stack, date, description, image, log
 
     return (
         <div className="project-view">
+            <div className={'back-btn'}>
+                <FontAwesomeIcon icon={faArrowLeft} />
+                <a onClick={() => navigate(-1)}>Go Back</a>
+            </div>
             <Row>
                 <Col className={'project-img'} sm={12} md={12} lg={8}>
                     {/*for projects without an image, show logo instead*/}

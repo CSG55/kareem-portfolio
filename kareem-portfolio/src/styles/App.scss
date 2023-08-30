@@ -176,4 +176,12 @@ blockquote {
   margin-right: 5px;
 }
 
-
+.back-btn {
+  color: white;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  margin: 5px;
+  width: fit-content;
+  cursor: pointer;
+}

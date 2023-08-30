@@ -16,7 +16,7 @@ function NavBar() {
                         <Nav className="ms-auto">
                             <Nav.Link className="ml-auto" href="#home">Adventures</Nav.Link>
                             <Link className="ml-auto nav-link" to={'/projects'}>Projects</Link>
-                            <Nav.Link className="ml-auto" href="#pricing">Skills</Nav.Link>
+                            <Link className="ml-auto nav-link" to={'/about-me'}>About me</Link>
                             <Nav.Link className="ml-auto" href="#contact">Contact</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
