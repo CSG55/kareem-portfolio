@@ -27,7 +27,7 @@ function ProjectView({title, mission, role, stack, date, description, image}) {
     return (
         <div className="project-view">
             <Row>
-                <Col className={'project-img'} sm={12} md={8} lg={8}>
+                <Col className={'project-img'} sm={12} md={12} lg={8}>
                     <ImageGallery
                         items={images}
                         showPlayButton={false}
@@ -36,7 +36,7 @@ function ProjectView({title, mission, role, stack, date, description, image}) {
                         onClick={onImageClickHandler}
                     />
                 </Col>
-                <Col sm={12} md={4} lg={4}>
+                <Col sm={12} md={12} lg={4}>
                     <div className="project-summary">
                         {title &&
                             <SummaryBlock name={'Project'} content={title}/>
