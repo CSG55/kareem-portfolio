@@ -8,16 +8,16 @@ function NavBar() {
 
     return (
         <>
-            <Navbar bg="light" data-bs-theme="light" expand="sm" className="bg-body-tertiary">
+            <Navbar collapseOnSelect bg="light" data-bs-theme="light" expand="sm" className="bg-body-tertiary">
                 <Container className="bg-body-tertiary">
                     <Link className={'navbar-brand'} to={'/'}>Kareem Khaled</Link>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto">
-                            <Nav.Link className="ml-auto" href="#home">Adventures</Nav.Link>
-                            <Link className="ml-auto nav-link" to={'/projects'}>Projects</Link>
-                            <Link className="ml-auto nav-link" to={'/about-me'}>About me</Link>
-                            <Nav.Link className="ml-auto" href="#contact">Contact</Nav.Link>
+                            <Nav.Link eventKey="1" as={Link} to="/">Adventures</Nav.Link>
+                            <Nav.Link eventKey="2" as={Link} to="/projects">Projects</Nav.Link>
+                            <Nav.Link eventKey="3" as={Link} to="/about-me">About me</Nav.Link>
+                            <Nav.Link eventKey="3" as={Link} to="/contact">Contact</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

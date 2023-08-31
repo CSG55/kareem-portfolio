@@ -1,38 +1,40 @@
-import React from 'react';
-import InteractivePanel from '../common/InteractivePanel';
+import React, {useRef} from 'react';
+import {Col, Row} from "react-bootstrap";
+import {SummaryBlock} from "../common";
+import ImageGallery from "react-image-gallery";
+import { useNavigate} from "react-router-dom";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faCoffee, faQuoteLeft, faQuoteRight} from "@fortawesome/free-solid-svg-icons";
-import {projectData} from "../../projectData";
+import {faArrowLeft, faQuoteLeft} from "@fortawesome/free-solid-svg-icons";
 
-const SkillsDashboard = () => {
+
+function SkillsDashboard() {
 
     return (
-        <div className="project-dashboard">
-            <div className="quote-header">
-                <FontAwesomeIcon icon={faQuoteLeft} />
-                <div>
-                    <blockquote>
-                        Whenever someone creates something with all of their heart, then that creation is given a soul.
-                    </blockquote>
-                    <cite> <img className="ghibli-soot-sprite" src={"/images/soot-sprite-ghibli.jpg"} alt={'ghibli soot sprite as bullet point'}></img>Reiko Yoshida, The Cat Returns </cite>
-                </div>
-                <FontAwesomeIcon icon={faQuoteRight} />
-            </div>
-            <div className="panel-container">
-                {projectData.map((panel) => (
-                    <InteractivePanel
-                        key={panel.id}
-                        id={panel.id}
-                        title={panel.title}
-                        image={panel.logo}
-                        imgBackground={panel.backgroundColor}
-                        role={panel.role}
-                        stack={panel.stack}
-                    />
-                ))}
-            </div>
+        <div className="skills-view">
+            <Row>
+                <Col sm={12} md={5} lg={5}>
+                    <img className={'headshot-img'} src={'/images/kareem-headshot-crop.png'} alt={'kareem head shot'}></img>
+                </Col>
+                <Col sm={12} md={7} lg={7}>
+                    <div className="short-blurb">
+                        Hello my name is Kareem. Professor: News! Bad! We're bankrupt. Oh, I borrowed money to invest in Bitcoin. Then the price crashed, and I sold at a huge loss. We're ruined! Oh, sorry. I didn't realize you were watching TV. Morbo: The tragic impact destroyed the planet Klarg, along with its 50 billion inhabitants. Linda: [Laughs] In other news, Morbo, guess what's back? Morbo: The planet Klarg? Linda: Nope! The price of Bitcoin!
+                    </div>
+                    <button className={'btn btn-primary'}>Contact me</button>
+                </Col>
+            </Row>
+            <Row>
+                <Col sm={12} md={5} lg={5}>
+                    <img className={'headshot-img'} src={'/images/kareem-headshot-crop.png'} alt={'kareem head shot'}></img>
+                </Col>
+                <Col sm={12} md={7} lg={7}>
+                    <div className="short-blurb">
+                        Hello my name is Kareem. Professor: News! Bad! We're bankrupt. Oh, I borrowed money to invest in Bitcoin. Then the price crashed, and I sold at a huge loss. We're ruined! Oh, sorry. I didn't realize you were watching TV. Morbo: The tragic impact destroyed the planet Klarg, along with its 50 billion inhabitants. Linda: [Laughs] In other news, Morbo, guess what's back? Morbo: The planet Klarg? Linda: Nope! The price of Bitcoin!
+                    </div>
+                    <button className={'btn btn-primary'}>Contact me</button>
+                </Col>
+            </Row>
         </div>
     );
-};
+}
 
 export default SkillsDashboard;
