@@ -2,7 +2,7 @@ import React, {useRef} from 'react';
 import {Col, Row} from "react-bootstrap";
 import {SummaryBlock} from "../common";
 import ImageGallery from "react-image-gallery";
-import { useNavigate} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faArrowLeft, faQuoteLeft} from "@fortawesome/free-solid-svg-icons";
 
@@ -12,7 +12,6 @@ function ProjectView({title, mission, role, stack, date, description, image, log
     const imageGalleryRef = useRef(null);
 
     const onImageClickHandler = () => {
-        console.log(imageGalleryRef.current)
         if (imageGalleryRef.current.state.isFullscreen){
             imageGalleryRef.current.exitFullScreen();
         } else {
@@ -33,7 +32,7 @@ function ProjectView({title, mission, role, stack, date, description, image, log
         <div className="project-view">
             <div className={'back-btn'}>
                 <FontAwesomeIcon icon={faArrowLeft} />
-                <a onClick={() => navigate(-1)}>Go Back</a>
+                <Link to={'/projects'}>Go Back</Link>
             </div>
             <Row>
                 <Col className={'project-img'} sm={12} md={12} lg={12} xl={8}>

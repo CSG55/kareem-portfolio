@@ -185,6 +185,9 @@ blockquote {
   margin: 5px;
   width: fit-content;
   cursor: pointer;
+  & a {
+    color: white;
+  }
 }
 
 a {
