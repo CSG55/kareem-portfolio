@@ -2,7 +2,7 @@ import React, {useRef} from 'react';
 import {Col, Row} from "react-bootstrap";
 import {SummaryBlock} from "../common";
 import ImageGallery from "react-image-gallery";
-import { useNavigate} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {
     faArrowLeft, faHandshake,
@@ -25,13 +25,13 @@ function SkillsDashboard() {
                 <Col className={'short-blurb-container'} xs={12} sm={7} md={7} lg={8} xl={9}>
                     <div className="short-blurb">
                         <p>My name is Kareem, and I'm thrilled to have you here today! I'm a Full-Stack Developer and Team Lead. </p>
-                        <p>For over 6 years, I've brought scalable web applications to life using ReactJS and Python/Node. It's not just the code – I've grown my leadership skills in agile settings and communicate well with stakeholders and developers alike.</p>
-                        <p>You can count on me to lead your projects, or to simply write great-quality code. </p>
+                        <p>For over 6 years, I've brought scalable web applications to life using ReactJS and Python/Node. <br/>It's not just the code – I've grown my leadership skills in agile settings and communicate well with stakeholders and developers alike.</p>
+                        <p>You can count on me to lead your projects, or to simply write great-quality code. <Link target="_blank" to={'/projects'}>See my work!</Link> </p>
                     </div>
                     <div className={'contact-btns'}>
-                        <SocialIcon url="https://www.linkedin.com/in/kareem-khaled-35a72773/" />
-                        <SocialIcon url="https://github.com/CSG55/" />
-                        <a target="_blank" className={'btn btn-primary'} href={"mailto:khaled.kareem0506@gmail.com"}>Contact me</a>
+                        <SocialIcon target="_blank"  url="https://www.linkedin.com/in/kareem-khaled-35a72773/" />
+                        <SocialIcon target="_blank"  url="https://github.com/CSG55/" />
+                        <SocialIcon target="_blank"  url="mailto:khaled.kareem0506@gmail.com" />
                     </div>
                 </Col>
             </Row>
