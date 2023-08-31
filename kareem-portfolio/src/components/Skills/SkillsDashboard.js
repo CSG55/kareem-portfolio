@@ -32,7 +32,7 @@ function SkillsDashboard() {
                 <Col className={'skills-column'} sm={6} md={6} lg={6}>
                     <div className={"skills-header-row"}>
                         <h4>Tech</h4>
-                        <FontAwesomeIcon icon={faLaptopCode} size={"lg"}/>
+                        <FontAwesomeIcon icon={faLaptopCode} size={"2xl"}/>
                         <div className={'skills-list-container'}>
                             <ul className={'skills-list'}>
                                 <li>ReactJS</li>
@@ -53,12 +53,12 @@ function SkillsDashboard() {
                         <h4>Skills</h4>
                         <div className={'skills-list-container'}>
                             <div className={'soft-skill-col'}>
-                                <div><FontAwesomeIcon icon={faMicroscope} size={"lg"}/> Observability </div>
-                                <div><FontAwesomeIcon icon={faQuestion} size={"lg"}/> Ambiguity </div>
+                                <div><FontAwesomeIcon icon={faMicroscope} size={"2xl"}/> Observability </div>
+                                <div><FontAwesomeIcon icon={faHandshake} size={"2xl"}/> Leadership </div>
                             </div>
                             <div className={'soft-skill-col'}>
-                                <div><FontAwesomeIcon icon={faHandshake} size={"lg"}/> Leadership </div>
-                                <div><FontAwesomeIcon icon={faPersonChalkboard} size={"lg"}/> Presentations </div>
+                                <div><FontAwesomeIcon icon={faQuestion} size={"2xl"}/> Ambiguity </div>
+                                <div><FontAwesomeIcon icon={faPersonChalkboard} size={"2xl"}/> Presentations </div>
                             </div>
                         </div>
                     </div>
