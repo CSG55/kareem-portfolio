@@ -36,7 +36,7 @@ function ProjectView({title, mission, role, stack, date, description, image, log
                 <a onClick={() => navigate(-1)}>Go Back</a>
             </div>
             <Row>
-                <Col className={'project-img'} sm={12} md={12} lg={8}>
+                <Col className={'project-img'} sm={12} md={12} lg={12} xl={8}>
                     {/*for projects without an image, show logo instead*/}
                     {image ? <ImageGallery
                                 items={images}
@@ -48,7 +48,7 @@ function ProjectView({title, mission, role, stack, date, description, image, log
                         <img className={'project-logo'} style={{backgroundColor: backgroundColor}} src={logo} alt={`${title} project photo`}></img>
                     }
                 </Col>
-                <Col sm={12} md={12} lg={4}>
+                <Col sm={12} md={12} lg={12} xl={4}>
                     <div className="project-summary">
                         {title &&
                             <SummaryBlock name={'Project'} content={title}/>

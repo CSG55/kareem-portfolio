@@ -7,7 +7,7 @@ const projectData = [
         logo: '/images/projects/sidekick/logo-sidekick.svg',
         image: '/images/projects/sidekick/SK-promo.png',
         mission:'To create an inclusive learning environment.',
-        role: 'Lead Full Stack Developer',
+        role: 'Senior Full Stack Developer',
         stack: 'ReactJS, Python (Flask), NodeJS, PostgreSQL, AWS.',
         date:'2021-2023',
         description:
@@ -39,7 +39,7 @@ const projectData = [
         logo: '/images/projects/ethics-bowl/NHSEBOne_Seal.png',
         image: '/images/projects/ethics-bowl/live-match.webp',
         mission:'Rescue a national extracurricular event in the pandemic.',
-        role: 'Lead Full Stack Developer',
+        role: 'Senior Full Stack Developer',
         stack:'ReactJS, Python (Flask), PostgreSQL, AWS.',
         date:'2020-2023',
         description:

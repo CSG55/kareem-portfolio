@@ -23,7 +23,9 @@ function SkillsDashboard() {
                 </Col>
                 <Col className={'short-blurb-container'} xs={12} sm={7} md={7} lg={8} xl={9}>
                     <div className="short-blurb">
-                        Hello my name is Kareem. Professor: News! Bad! We're bankrupt. Oh, I borrowed money to invest in Bitcoin. Then the price crashed, and I sold at a huge loss. We're ruined! Oh, sorry. I didn't realize you were watching TV. Morbo: The tragic impact destroyed the planet Klarg, along with its 50 billion inhabitants. Linda: [Laughs] In other news, Morbo, guess what's back? Morbo: The planet Klarg? Linda: Nope! The price of Bitcoin!
+                        <p>My name is Kareem, and I'm thrilled to have you here today! I'm a Full-Stack Developer and Team Lead. </p>
+                        <p>For over 6 years, I've brought scalable web applications to life using ReactJS and Python/Node. It's not just the code – I've grown my leadership skills in agile settings and communicate well with stakeholders and developers alike.</p>
+                        <p>You can count on me to lead your projects, or to simply write great-quality code. </p>
                     </div>
                     <button className={'btn btn-primary'}>Contact me</button>
                 </Col>
