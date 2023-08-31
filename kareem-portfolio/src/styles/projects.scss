@@ -1,0 +1,61 @@
+@import 'variables';
+
+.project-dashboard {
+  background-color: $secondary-olive;
+  min-height: 92%;
+  position: absolute;
+  width: 100%;
+}
+
+.project-view-wrapper {
+  background-color: $secondary-olive;
+  min-height: 92%;
+  padding: 5%;
+  position: absolute;
+
+  & .project-img {
+    display: flex;
+    //margin: auto;
+    justify-content: center;
+    padding-bottom: 3%;
+    & img {
+      max-width: 100%;
+      max-height: 100%;
+      vertical-align: middle;
+      border-radius: 15px;
+      background-color: $tertiary-beige;
+    }
+    & .project-logo {
+      border: 1px solid $tertiary-beige;
+    }
+  }
+}
+
+.project-summary {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  background-color: $tertiary-beige;
+  padding: 10px;
+  margin-bottom: 3%;
+  text-align: left;
+  border-radius: 15px;
+  & .summary-block {
+    width: fit-content;
+    margin-right: auto;
+  }
+}
+
+.project-description {
+  text-align: left;
+  padding: 10px;
+  background-color: $tertiary-beige;
+  border-radius: 15px;
+  width: 100%;
+
+  & ul {
+    margin-bottom: 0;
+  }
+}
+

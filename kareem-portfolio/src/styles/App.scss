@@ -1,0 +1,195 @@
+@import 'variables';
+
+.App {
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.portfolio-dashboard {
+  overflow: hidden;
+  height: 92vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../../public/images/kareem_portfolio_main.jpeg');
+  background-position: center;
+  background-color: $background-theme;
+
+  & .dashboard-footer-row {
+    width: 100%;
+    position: absolute;
+    bottom: 45px;
+    left: 0;
+    right: 0;
+  }
+  @media (max-width: 992px) {
+    & .dashboard-footer-row {
+      --bs-gutter-x: 0;
+    }
+  }
+
+  @media (min-width: 992px) {
+    & .dashboard-footer-row {
+      bottom: 180px;
+    }
+  }
+}
+
+.navbar{
+  height: 8%;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bold;
+  border-bottom: 2px solid black;
+  @media (max-width: 992px) {
+    overflow: hidden;
+    height: unset;
+    min-height:8%;
+  }
+
+}
+
+.btn-container{
+  display: flex;
+  flex-flow: column;
+}
+
+
+.panel-container{
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  flex-direction: row;
+  margin: 2% 10% 0 10%;
+  height: fit-content;
+
+  @media (max-width: 768px) {
+    margin: 0 1% 1% 1%;
+  }
+
+  .interactive-panel {
+    height: 230px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 10px;
+    width: 300px;
+    justify-content: center;
+    background-color: $tertiary-beige;
+    border: 1px solid $tertiary-beige;
+    border-radius: 15px;
+    cursor: pointer;
+    @media (max-width: 768px) {
+      height: 175px;
+    }
+
+    & img {
+      position: absolute;
+      padding: 0 15px 0 15px
+    }
+    & .card-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  & .interactive-panel:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: black!important;
+    opacity: 0.8;
+    color: white;
+    & img {
+      opacity: 0.2;
+    }
+  }
+
+  & .hidden-text {
+    display: none;
+  }
+
+  & .interactive-panel:hover .hidden-text {
+    display: block;
+  }
+}
+.app-container {
+  //min-height: 92%;
+  width: 100%;
+}
+
+.quote-header {
+  background-color: black;
+  color: white;
+  height: fit-content;
+  padding: 10px 10% 20px 10%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: center;
+
+  & svg {
+    width: 5vw;
+    height: fit-content;
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+blockquote {
+  font-size: 1.4em;
+  line-height: 1.5em;
+  padding: 0 11px 0 10px;
+  @media (max-width: 768px) {
+    font-size: 1.2em;
+  }
+}
+
+.ghibli-soot-sprite{
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+}
+
+.back-btn {
+  color: white;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  margin: 5px;
+  width: fit-content;
+  cursor: pointer;
+  & a {
+    color: white;
+  }
+}
+
+a {
+  color: $secondary-olive;
+}

@@ -1,0 +1,31 @@
+@import 'variables';
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+
+.Typewriter.code-theme {
+  background-color: black;
+  color: #23ff13;
+  width: fit-content;
+  margin: auto;
+}
+.Typewriter {
+  color: white;
+  margin: auto;
+}
+
+.Typewriter span {
+  font-size: 2.5rem;
+  font-family: 'Noto Sans', sans-serif;
+      font-weight: bold;
+}
+.typewriter-container{
+  width: 276px;
+  background:rgba(136, 74, 57, 0.7); /*$chestnut*/
+  box-shadow: 0 0 1px 1px $chestnut;
+  margin: auto;
+  padding: 10px;
+  @media (min-width: 992px) {
+    float: right;
+    margin-right: 50px;
+  }
+}
+
