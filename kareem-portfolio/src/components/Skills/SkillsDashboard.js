@@ -11,6 +11,7 @@ import {
     faPersonChalkboard, faQuestion,
     faQuoteLeft
 } from "@fortawesome/free-solid-svg-icons";
+import {SocialIcon} from "react-social-icons";
 
 
 function SkillsDashboard() {
@@ -27,7 +28,11 @@ function SkillsDashboard() {
                         <p>For over 6 years, I've brought scalable web applications to life using ReactJS and Python/Node. It's not just the code – I've grown my leadership skills in agile settings and communicate well with stakeholders and developers alike.</p>
                         <p>You can count on me to lead your projects, or to simply write great-quality code. </p>
                     </div>
-                    <button className={'btn btn-primary'}>Contact me</button>
+                    <div className={'contact-btns'}>
+                        <SocialIcon url="https://www.linkedin.com/in/kareem-khaled-35a72773/" />
+                        <SocialIcon url="https://github.com/CSG55/" />
+                        <a target="_blank" className={'btn btn-primary'} href={"mailto:khaled.kareem0506@gmail.com"}>Contact me</a>
+                    </div>
                 </Col>
             </Row>
             <Row className={'skills-header-container'}>
