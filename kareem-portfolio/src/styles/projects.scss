@@ -2,16 +2,13 @@
 
 .project-dashboard {
   background-color: $secondary-olive;
-  min-height: 92%;
-  position: absolute;
+  min-height: 100%;
   width: 100%;
 }
 
 .project-view-wrapper {
   background-color: $secondary-olive;
-  min-height: 92%;
   padding: 5%;
-  position: absolute;
 
   & .project-img {
     display: flex;
