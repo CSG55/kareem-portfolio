@@ -9,6 +9,7 @@
 .project-view-wrapper {
   background-color: $secondary-olive;
   padding: 5%;
+  min-height: 100%;
 
   & .project-img {
     display: flex;
