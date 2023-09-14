@@ -71,7 +71,7 @@ function SkillsDashboard() {
                                         </ul>
                                     </p>
                                 }>
-                                    <div><FontAwesomeIcon icon={faMicroscope} size={"2xl"}/> Observability </div>
+                                    <div className={'skill-container'}><FontAwesomeIcon icon={faMicroscope} size={"2xl"}/> Observability </div>
                                 </PortfolioPopover>
                                 <PortfolioPopover position={'top'} title={'Leadership'} body={
                                     <p>
@@ -81,7 +81,7 @@ function SkillsDashboard() {
                                         </ul>
                                     </p>
                                 }>
-                                    <div><FontAwesomeIcon icon={faHandshake} size={"2xl"}/> Leadership </div>
+                                    <div className={'skill-container'}><FontAwesomeIcon icon={faHandshake} size={"2xl"}/> Leadership </div>
                                 </PortfolioPopover>
                             </div>
                             <div className={'soft-skill-col'}>
@@ -90,7 +90,7 @@ function SkillsDashboard() {
                                         Experience working with non-technical clients to extract problems and architecture.
                                     </p>
                                 }>
-                                    <div><FontAwesomeIcon icon={faQuestion} size={"2xl"}/> Ambiguity </div>
+                                    <div className={'skill-container'}><FontAwesomeIcon icon={faQuestion} size={"2xl"}/> Ambiguity </div>
                                 </PortfolioPopover>
                                 <PortfolioPopover position={'top'} title={'Presentations'} body={
                                     <p> Seasoned at presenting to technical and non-technical teams alike.
@@ -102,7 +102,7 @@ function SkillsDashboard() {
                                         </ul>
                                     </p>
                                 }>
-                                    <div><FontAwesomeIcon icon={faPersonChalkboard} size={"2xl"}/> Presentations </div>
+                                    <div className={'skill-container'}><FontAwesomeIcon icon={faPersonChalkboard} size={"2xl"}/> Presentations </div>
                                 </PortfolioPopover>
                             </div>
                         </div>
