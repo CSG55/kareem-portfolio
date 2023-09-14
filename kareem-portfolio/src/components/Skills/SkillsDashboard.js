@@ -12,6 +12,7 @@ import {
     faQuoteLeft
 } from "@fortawesome/free-solid-svg-icons";
 import {SocialIcon} from "react-social-icons";
+import PortfolioPopover from "../common/PortfolioPopover";
 
 
 function SkillsDashboard() {
@@ -60,12 +61,49 @@ function SkillsDashboard() {
                         <h4>Skills</h4>
                         <div className={'skills-list-container'}>
                             <div className={'soft-skill-col'}>
-                                <div><FontAwesomeIcon icon={faMicroscope} size={"2xl"}/> Observability </div>
-                                <div><FontAwesomeIcon icon={faHandshake} size={"2xl"}/> Leadership </div>
+                                <PortfolioPopover position={'top'} title={'Observability'} body={
+                                    <p> Built integrations with:
+                                        <ul>
+                                            <li>k6 grafana</li>
+                                            <li>AWS Cloudwatch</li>
+                                            <li>sentry.io</li>
+                                            <li>newrelic</li>
+                                        </ul>
+                                    </p>
+                                }>
+                                    <div><FontAwesomeIcon icon={faMicroscope} size={"2xl"}/> Observability </div>
+                                </PortfolioPopover>
+                                <PortfolioPopover position={'top'} title={'Leadership'} body={
+                                    <p>
+                                        <ul>
+                                            <li>Experience leading development teams of 4-8 </li>
+                                            <li>Provides mentorship to developers</li>
+                                        </ul>
+                                    </p>
+                                }>
+                                    <div><FontAwesomeIcon icon={faHandshake} size={"2xl"}/> Leadership </div>
+                                </PortfolioPopover>
                             </div>
                             <div className={'soft-skill-col'}>
-                                <div><FontAwesomeIcon icon={faQuestion} size={"2xl"}/> Ambiguity </div>
-                                <div><FontAwesomeIcon icon={faPersonChalkboard} size={"2xl"}/> Presentations </div>
+                                <PortfolioPopover position={'top'} title={'Ambiguity'} body={
+                                    <p>
+                                        Experience working with non-technical clients to extract problems and architecture.
+                                    </p>
+                                }>
+                                    <div><FontAwesomeIcon icon={faQuestion} size={"2xl"}/> Ambiguity </div>
+                                </PortfolioPopover>
+                                <PortfolioPopover position={'top'} title={'Presentations'} body={
+                                    <p> Seasoned at presenting to technical and non-technical teams alike.
+                                        Here is a sample of some presentations I've created.
+                                        <ul>
+                                            <li><a href={'https://docs.google.com/presentation/d/1wOo33cQRNGeq8CUKqrAmGNDE6kh6RX2KQBNeiPhkwok/edit#slide=id.p'}>Intro to Web Accessibility</a></li>
+                                            <li> <a href={'https://docs.google.com/presentation/d/1ejT6ZPJFo1MGJG8sL1XC40c0yFjtrkucqmvuIivXlK0/edit#slide=id.p'}>Python's Walrus Operator</a></li>
+                                            <li> <a href={'https://docs.google.com/presentation/d/1A1tIHC6-z2PInUpEBefpoqaImpKzwaWOSVEMtHWO-GY/edit#slide=id.p'}>Best Practices with SQLAlchemy</a></li>
+                                        </ul>
+                                    </p>
+                                }>
+                                    <div><FontAwesomeIcon icon={faPersonChalkboard} size={"2xl"}/> Presentations </div>
+                                </PortfolioPopover>
                             </div>
                         </div>
                     </div>

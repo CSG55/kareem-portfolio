@@ -190,3 +190,13 @@ blockquote {
 a {
   color: $secondary-olive;
 }
+
+.popover{
+  & .popover-header {
+    background-color: $secondary-olive;
+    color: white;
+  }
+  & .popover-body {
+
+  }
+}
